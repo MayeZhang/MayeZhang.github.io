@@ -21,9 +21,9 @@ description: A virtual proof that I'm awesome
 # List of links in the navigation bar
 navbar-links:
   Home: "index"
-  Bolg: "blog"
+  #Bolg: "blog"
   Tags: "tags"
-  #About Me: "aboutme2"
+  About Me: "aboutme2"
   
 
 

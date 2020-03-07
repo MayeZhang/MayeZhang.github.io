@@ -2,41 +2,41 @@
 /**** INDEX.HTML STYLES ****/
 /***************************/
 
-.index-page {
+.aboutme2-page {
     margin: 80px 0 20px;
 }
 
-.index-page h2 {
+.aboutme2-page h2 {
     margin: 0;
     font-size: 20px;
     font-variant: small-caps;
     font-weight: bold;
 }
 
-.index-page h3 {
+.aboutme2-page h3 {
     font-size: 14px;
     font-variant: small-caps;
     text-align: center;
     text-decoration: underline;
 }
 
-.index-page h4 {
+.aboutme2-page h4 {
     font-size: 14px;
     font-variant: small-caps;
     text-align: center;
     font-weight: normal;
 }
 
-.index-page .detail {
+.aboutme2-page .detail {
     font-size: 14px;
 }
 
-.index-page .detail hr {
+.aboutme2-page .detail hr {
     width: 100px;
 }
 
 /* Avatar pic */
-.index-page .avatar-img {
+.aboutme2-page .avatar-img {
     width: 100px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
@@ -47,21 +47,21 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .index-page {
+    .aboutme2-page {
         margin-top: 130px
     }
 
-    .index-page h1 {
+    .aboutme2-page h1 {
         font-size: 50px;
     }
 
-    .index-page h2 {
+    .aboutme2-page h2 {
         margin: 0;
         font-size: 25px;
         font-weight: bold;
     }
 
-    .index-page .avatar-img {
+    .aboutme2-page .avatar-img {
         margin-top: 10px;
     }
 
