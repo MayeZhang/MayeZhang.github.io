@@ -93,5 +93,5 @@ yelp:
 
 blogY:
   name: "博客园"
-  baseURL: "https://www.cnblogs.com/MayeZhang/"
+  baseURL: "https://www.cnblogs.com/"
   icon: "https://files.cnblogs.com/files/MayeZhang/favicon_pig2.ico"
