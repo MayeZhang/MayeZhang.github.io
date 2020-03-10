@@ -94,4 +94,4 @@ yelp:
 blogY:
   name: "博客园"
   baseURL: "https://www.cnblogs.com/"
-  icon: "fa-zhihu"
+  icon: "fa-rss"
