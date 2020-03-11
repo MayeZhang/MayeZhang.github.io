@@ -22,6 +22,9 @@ navbar-links:
   Home: "index"
   #Bolg: "blog"
   Tags: "tags"
+  Resources:
+    - 博客园: "https://www.cnblogs.com/MayeZhang/"
+    - Github: "https://github.com/MayeZhang"
   About Me: "aboutme2"
   
 
