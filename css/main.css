@@ -334,8 +334,8 @@ footer .theme-by {
   color: {{ site.hover-col }};
 }
 
-.post-preview .post- {
-  font-size: 30px;
+.post-preview .post-title {
+  font-size: 28px;
   margin-top: 0;
 }
 .post-preview .post-subtitle {
