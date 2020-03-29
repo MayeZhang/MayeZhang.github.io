@@ -33,7 +33,7 @@ tag: Tips
 
 ## 3 使用
 
-1. 打开桌面版应用点击加号
+- 打开桌面版应用点击加号
 
 <center><img alt="fig svd_note1.svg" src="https://raw.githubusercontent.com/maye1998/photo/master/Tips/mathpix_使用.png" style="zoom:45%;"/>
 <div ></div> 
@@ -41,7 +41,7 @@ tag: Tips
 
 
 
-2. 随便找个公式截图
+- 随便找个公式截图
 
 <center><img alt="fig svd_note1.svg" src="https://raw.githubusercontent.com/maye1998/photo/master/Tips/mathpix_使用2.png
 " style="zoom:50%;"/>
