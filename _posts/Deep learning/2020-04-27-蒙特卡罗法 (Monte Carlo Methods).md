@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 蒙特卡罗法 (Monte Carlo Methods)
+title: "蒙特卡罗法 (Monte Carlo Methods)"
 date:   2020-04-27
 tag: 强化学习
 ---
