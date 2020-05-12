@@ -84,14 +84,15 @@ header:
   #     ko      : &KO       ❤️도메인 이름
   #     ko-KR   : *KO
   #   url:  https://www.cnblogs.com/MayeZhang/
-  - title: '导航',
-                chilren: [
-                    {
-                        title: '谷歌',
-                        url: 'https://www.google.com/',
-                    },
-                    {
-                        title: '百度',
-                        url: 'https://www.baidu.com/',
-                    },
-                ]
+  
+  # - title: '导航',
+  #               chilren: [
+  #                   {
+  #                       title: '谷歌',
+  #                       url: 'https://www.google.com/',
+  #                   },
+  #                   {
+  #                       title: '百度',
+  #                       url: 'https://www.baidu.com/',
+  #                   },
+  #               ]
