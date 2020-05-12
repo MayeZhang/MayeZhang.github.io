@@ -11,7 +11,7 @@ Yuze Zou:
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # zouyu4524 # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  zhihu     : MayeZhang # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # 69722837 # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
   github    : MayeZhang # "user_name" the last part of your profile url, e.g. https://github.com/user_name
