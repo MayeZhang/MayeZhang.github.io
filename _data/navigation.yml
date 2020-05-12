@@ -1,4 +1,20 @@
 header:
+  - titles:
+      en      : &EN       🛠️Tools
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  🛠️工具
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : *ZH_HANS
+      zh-TW   : *ZH_HANS
+      zh-HK   : *ZH_HANS
+      ko      : &KO       🛠️도구
+      ko-KR   : *KO
+    url: /tools.html
 
   - titles:
       en      : &EN       📚Blogs
@@ -34,22 +50,6 @@ header:
       ko-KR   : *KO
     url: /blog/archive.html
 
-  - titles:
-      en      : &EN       🛠️Tools
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  🛠️工具
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : *ZH_HANS
-      zh-TW   : *ZH_HANS
-      zh-HK   : *ZH_HANS
-      ko      : &KO       🛠️도구
-      ko-KR   : *KO
-    url: /tools.html
 
   - titles:
       en      : &EN       👨‍🎓About
