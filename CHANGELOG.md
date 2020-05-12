@@ -1,75 +1,235 @@
-# CHANGELOG
+# Change Log
 
-This file lists all non-trivial changes to Beautiful Jekyll.
+## 2.2.6 (2019-02-02)
 
-I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
+### Enhancements
 
-**2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
+- Add [commit linter](https://commitlint.js.org/)
+- Add [EditorConfig](https://editorconfig.org/)
+- Update npm packages
 
-**2018-10-19** Move Google Analytics to the head (#419) (thanks @jpvicari)
+### Bug Fixes
 
-**2018-06-08** Add support for Facebook comments (#350) (thanks @npes87184)
+- Fix some spelling errors in documents
+- Fix some errors in configs
 
-**2018-02-22** Automatically generate sitemap (#323) (thanks @JosemyDuarte)
+## 2.2.5 (2019-12-08)
 
-**2018-01-18** Add clickable tags to each post and a tags index page, works for GitHub sites (#307) (thanks @OCram85)
+### Enhancements
 
-**2018-01-14** Redo Dockerfile (#302) (thanks @jennydaman)
+- Update to Jekyll 4.0
+- Add custom snippets for main/top, main/bottom, article/top,  article/bottom, etc
+- Add Medium, Zhihu social icons
+- Add Google Custom Search support
+- Add Korean locale (@ssosso)
+- Add French locale (@ctrl-q)
+- Add Docker support
 
-**2018-01-06** More color personalization options (#297 and #299) (thanks @jennydaman)
+## 2.2.4 (2018-12-10)
 
-**2018-01-05** Abstract the social networks logic (thanks @OCram85)
+### Enhancements
 
-**2018-01-03** Avatar image no longer causes a ghost click (thanks @alefi87)
+- Swiper component support mouse move
+- Add lightbox (modal image gallery)
+- Add Valine comment system (@Lloyar)
 
-**2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
+### Bug Fixes
 
-**2017-09-04** Ability to change colour/image of navbar/footer/body
+- Fix some spelling errors in documents (@Krinkle)
 
-**2017-08-17** Add support for notification, error, and warning boxes in markdown (#227) (thanks @OCram85)
+## 2.2.3 (2018-11-11)
 
-**2017-08-12** Add social buttons for twitch, yelp, and steam (#234) (thanks @TheRealBenForce)
+### Enhancements
 
-**2017-03-30** Make the footer contact links friendly for screen readers (thanks @eugenius1)
+- Add Swiper component
+- Add AddThis sharing service (@liao961120)
+- Add extensions for demos (CodePen)
+- Add special stylesheets for print
 
-**2017-03-30** Started a CHANGELOG file (thanks @eugenius1)
+## 2.2.2 (2018-10-21)
 
-**2017-01-28** Add Subresource Integrity (SRI) support (#164) (thanks @tony-ho)
+### Enhancements
 
-**2017-01-09** Add Google Tag Manager Integration (#157) (thanks @csarigoz)
+- Add extensions for audios (SoundCloud, Netease Cloud Music), videos (YouTube, TED, bilibili) and slide(SlideShare)
+- Add AddToAny sharing service
 
-**2017-01-06** Add options to configure HTML document title (#154) (thanks @tony-ho)
+## 2.2.1 (2018-10-02)
 
-**2016-12-25** Allow dynamic images on each blog post (#143) (thanks @bbritten)
+### Enhancements
 
-**2016-12-15** Support `title-img` config param to have image in the navbar instead of text
+- Update screenshots
+- Landing layout `data.sections` item's `image` add `full_width` setting
+- Remove `header.type` and add `header.background` setting
+- Page layout sidebar use document scroll when viewport width < 1024px, this enhance the user experience on a phone or a pad
+- Telegram social icon (@WangQiru)
+- Search panel use dark background
 
-**2016-12-08** Add support for phone numbers in footer; fix #136
+## 2.2.0 (2018-09-16)
 
-**2016-12-06** Update gemfile (#134) (thanks @stephentuso)
+### Enhancements
 
-**2016-10-09** Add Docker deployment (#114) (thanks @mangar)
+- `article_header` setting for page layout
+- Articles layout
+- New grid system
+- Image, card, item and hero components
+- Tag additional style
+- chart.js update to 2.7.2, mathjax update to 2.7.4 and mermaid update to 8.0.0-rc.8
 
-**2016-08-06** Add social share buttons for posts (thanks @rtlee9)
+### Bug Fixes
 
-**2016-07-29** Add CSS styling to code chunks
+- Replace Lenna test image
 
-**2016-07-27** Add clickable tags that lead to a tag page (doesn't work for GitHub hosted sites) (thanks @epwalsh)
+## 2.1.0 (2018-08-26)
 
-**2016-07-21** Add support for twitter cards (sharing on Twitter will be better); fixes #70
+### Enhancements
 
-**2016-03-18** Support full-width images in page headers; fixes #37
+- Search panel (Click search icon in the header or press `s` or `/` key to search)
+- Npm social icon (@WangQiru)
 
-**2016-03-18** Support menus in navigation bar
+### Bug Fixes
 
-**2016-02-07** Avatar is now conditional (thanks @hristoyankov)
+- Google analytics may not work, use gtag.js
 
-**2016-02-02** Migrate (forced to...) to jekyll 3
+## 2.0.2 (2018-07-29)
 
-**2016-01-22** Make sure not to include JQuery twice, fixes #29
+### Enhancements
 
-**2015-11-19** Support external links in navigation bar; fixes #3
+- Highlight theme
+- Articles whit `sidebar.toc` support section navigator (previous and next navigator)
+- Aside Toc show immediately after page get ready (no more delay)
 
-... Many small changes because the site was in its infancy
+### Bug Fixes
 
-**2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+- Aside Toc may display error when scroll to bottom
+
+## 2.0.1 (2018-07-07)
+
+> “All elements that respond to press should have a visual feedback when touched.”
+>
+> —TouchableWithoutFeedback in *React Native Docs*
+
+### Enhancements
+
+- Some interaction details optimize: button and link add feedback when clicked, cancel button of input in archive layout, button focus style, etc
+
+### Bug Fixes
+
+- `mathjax` and `mermaid` setting may not work
+
+## 2.0.0 (2018-07-01)
+
+Breaking changes, please check [Update from 1.x to 2.x](https://tianqi.name/jekyll-TeXt-theme/docs/en/update-from-1-to-2) for details
+
+### Enhancements
+
+- Authors
+- License
+- New layouts (page, article, landing, etc)
+
+## 1.5.0 (2018-03-18)
+
+### Enhancements
+
+- `text_color_theme` setting
+- Long pagination
+- Additional styles (Alert, Image)
+- Mathjax `autoNumber` setting (@liao961120)
+- Article heading anchor
+- Previous and next post
+- Search
+
+## 1.4.3 (2018-01-13)
+
+### Enhancements
+
+- New TOC style
+- Gitalk support (@WangQiru)
+- Mermaid support
+- `site.paths` and `site.nav_lists` configs support absolute URL
+
+## 1.4.2 (2017-12-10)
+
+### Enhancements
+
+- Use new liquid syntax `{%-` `-%}` to avoid unnecessary output whitespace
+- Add `paths.base` setting
+
+## 1.4.1 (2017-12-05)
+
+### Enhancements
+
+- New color themes(Chocolate, Orange)
+
+### Bug Fixes
+
+- Issues 9: the _posts file can't recorded by git
+
+## 1.4.0 (2017-11-19)
+
+### Enhancements
+
+- Internationalization
+
+### Bug Fixes
+
+- Table overflow-x smooth on iOS
+
+## 1.3.0 (2017-11-11)
+
+### Enhancements
+
+- Article tag supports special characters
+- Excerpts type (HTML | TEXT)
+- Titles on the phone become smaller
+- Change styles for table, code and blockquote
+
+## 1.2.2 (2017-11-04)
+
+### Enhancements
+
+- MathJax Support
+- Add “Read more” link at the end of article excerpt
+- 404 page
+
+### Bug Fixes
+
+- Fix Email link URL error
+- Fix Site Title link URL error
+- Fix table responsive style error
+
+## 1.2.1 (2017-10-27)
+
+### Enhancements
+
+- Optimize Article TOC
+
+### Bug Fixes
+
+- Pageview display error when the post key include `-` (@yuxianda)
+- Email url error
+
+## 1.2.0 (2017-10-22)
+
+### Enhancements
+
+- Article excerpt no more than 200 words
+- If `leancloud` is not set, 0 view won't display
+
+### Bug Fixes
+
+- Fix article TOC’s display error at proper situation
+- Fix footer social buttons not in the center bug
+
+## 1.1.0 (2017-10-19)
+
+### Enhancements
+
+- Color variables
+- More color themes (dark, forest, ocean)
+
+## 1.0.0 (2017-10-17)
+
+### Enhancements
+
+- Better article directories
+- Dark color theme
