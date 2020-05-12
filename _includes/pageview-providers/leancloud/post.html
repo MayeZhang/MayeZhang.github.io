@@ -5,13 +5,13 @@
 {%- assign _LEANCLOUD_APP_KEY = site.pageview.leancloud.app_key -%}
 {%- assign _LEANCLOUD_APP_CLASS = site.pageview.leancloud.app_class -%}
 
-{%- if page.key and
-  _LEANCLOUD_APP_ID and
-  _LEANCLOUD_APP_KEY and
-  _LEANCLOUD_APP_CLASS -%}
+{%- if _LEANCLOUD_APP_ID and
+    _LEANCLOUD_APP_KEY and
+    _LEANCLOUD_APP_CLASS -%}
 
   <script>
     {%- include pageview-providers/leancloud/leancloud.js -%}
+    {%- include pageview-providers/leancloud/unique-views.js -%}
   </script>
   <script>
     window.Lazyload.js(['{{ _sources.jquery }}', '{{ _sources.leancloud_js_sdk}}'], function() {
@@ -21,10 +21,26 @@
         appClass: '{{ _LEANCLOUD_APP_CLASS }}'
       });
       var key =   '{{ page.key }}';
-      var title = {{ page.title | jsonify }};
-      pageview.increase(key, title, function(view) {
-        $("[data-page-key='{{ page.key }}']").text(view);
+      if (key != '') {
+        var title = {{ page.title | jsonify }};
+        pageview.increase(key, title, function(view) {
+          $("[data-page-key='{{ page.key }}']").text(view);
+        });
+      }
+      pageview.increase('whole-site', '全站访问', function(view) {
+          $("#whole-site-views").text(view);
       });
+      var user = getCookie('be-my-only.xyz');
+      if ('' == user) {
+        setCookie('be-my-only.xyz', uuidv4(), 30);
+        pageview.increase('unique-views', '访问用户数', function(view) {
+          $("#unique-views").text(view);
+        });
+      } else {
+        pageview.get('unique-views', function(view) {
+          $("#unique-views").text(view);
+        });
+      }
     });
   </script>
 

@@ -171,7 +171,7 @@ layout: base
             {%- if page.article_header.image.src -%}
               {%- include snippets/get-nav-url.html path=page.article_header.image.src -%}
               {%- assign _header_image_src = __return -%}
-              <img class="article__header--cover" src="{{ _header_image_src }}" />
+              <img class="article__header--cover" src="{{ _header_image_src }}"></img>
             {%- endif -%}
           {%- endif -%}
 
@@ -242,6 +242,11 @@ layout: base
 {%- endif -%}
 </div>
 
+<div id="back-top" style="display: none;">
+  <a href="#">
+     <i class="fas fa-arrow-up fa-2x"></i>
+  </a>
+</div>
 
 <script>
   {%- include scripts/lib/scroll-to.js -%}
@@ -268,3 +273,4 @@ layout: base
 
 {%- include markdown-enhancements.html -%}
 {%- include pageview.html -%}
+{%- include copy-to-clipboard.html -%}
