@@ -83,6 +83,4 @@ header:
       zh-HK   : *ZH_HANT
       ko      : &KO       ❤️도메인 이름
       ko-KR   : *KO
-    url:
-      - '博客园': "https://www.cnblogs.com/MayeZhang/"
-      - 'Github': "https://github.com/MayeZhang"
+    url:https://www.cnblogs.com/MayeZhang/
