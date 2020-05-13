@@ -8,7 +8,7 @@ pageview: false
 <div id="ID_PHOTO" style="width: 18%;">
 	<div class="card">
 		<div class="card__image">
-			<img class="image" src="https://images.cnblogs.com/cnblogs_com/MayeZhang/1656324/o_200227075148%E5%8A%A8%E7%89%A9%20%E7%8C%AA.png" />
+			<img class="image" src="https://gitee.com/mayezhang/photo/raw/master/Tips/avatar-icon.png" />
 		</div>
 	</div>
 </div>
