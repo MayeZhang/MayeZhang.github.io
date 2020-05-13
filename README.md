@@ -92,47 +92,14 @@ bundle exec jekyll serve
 
 *本地通过Jekyll编译时无法看到评论功能。*
 
-## ChangeLog
+## 配置
 
-| 日期	| 修改说明 |
-|:---:	|:---	  |
-| 2020/04/26 | 新增blog, 调试Python module |
-| 2020/04/13 | 新增blog, 常用矩阵等式 |
-| 2020/04/10 | 新增blog, LaTeX相关环境与推荐 |
-| 2020/03/26 | 新增blog, MiKTeX epstopdf字体问题 |
-| 2020/02/22 | 修改评论系统为Valine |
-| 2020/02/20 | 新增blog, 读博心路历程 |
-| 2020/02/14 | 新增blog, Mac初体验 |
-| 2020/02/06 | 修复由GitHub API弃用导致的Gitalk组件产生的警告邮件提醒问题, credit to [@geektutu](https://github.com/geektutu) |
-| 2020/02/01 | 新增blog, 安装百度网盘Linux版 | 
-| 2020/01/22 | 新增blog, MATLAB绘图小记4则 |
-| 2020/01/13 | 新增blog, SSH隧道使用Samba |
-| 2019/12/27 | 新增blog, 实现站点PV、UV统计 |
-| 2019/12/19 | 新增blog, 全面迁移至七牛云 |
-| 2019/12/13 | 新增blog, 七牛云图床 |
-| 2019/12/12 | 新增blog, Linux科学上网 |
-| 2019/12/11 | 开启七牛云图床HTTPS |
-| 2019/12/09 | 更新图床为七牛云 |
-| 2019/11/22 | 新增blog, 无线路由器桥接 |
-| 2019/11/14 | 新增blog, 远程连接实验室服务器 |
-| 2019/10/24 | 新增blog, TeXStudio主题设置 |
-| 2019/10/22 | 新增页面, 罗列常用软件, 备查 |
-| 2019/10/22 | 新增blog, 总结三个CSS相关小项目 |
-| 2019/10/17 | 新增blog, 个人站点相关配置总结 |
-| 2019/10/12 | 更改网站URL为: be-my-only.xyz/blog/, credit to [@Zerone](https://github.com/ZeroneCat) |
-| 2019/10/12 | 新增blog, 实现*双播放器*功能 |
-| 2019/10/03 | 增加一键代码复制功能, 新增blog记录PR |
-| 2019/10/01 | 新增blog, TikZ简介 |
-| 2019/09/30 | 新增blog, 高斯正十七边形 |
-| 2019/09/30 | 新增旧blog, MATLAB OOP 读书笔记 |
-| 2019/09/28 | 新增blog, Pop-Art 算法复现 |
-| 2019/09/24 | 新增blog, PyTorch backward与in-place赋值小记 |
-| 2019/09/19 | 新增blog, PyTorch基础教程 |
-| 2019/09/18 | 新增blog, 矩阵梯度推导 \| 修改Mathjax的自动编号为`True` |
-| 2019/09/12 | 新增blog, 翻译论文 |
-| 2019/09/04 | 新增blog, 介绍Python中调用MATLAB的方法 |
-| 2019/08/28 | 增加 `jekyll-seo-tag` |
-| 2019/08/18 | 更改logo, 新增以前的博客内容 |
-| 2019/08/17 | 启用评论功能(gitalk), 新增一篇以前的博客, 更新About |
-| 2019/08/15 | 第一篇blog, 测试Mathjax和代码高亮	|
-| 2019/08/14 | Fork TeXt, 搭建框架 |
+- 主页面
+
+  `Blog/landing`，可以修改封面
+
+- 标签
+
+  _data/navigation
+
+- 
