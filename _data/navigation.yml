@@ -68,31 +68,31 @@ header:
       ko-KR   : *KO
     url: /about.html
   
-  # - titles:
-  #     en      : &EN       ❤️Domain
-  #     en-GB   : *EN
-  #     en-US   : *EN
-  #     en-CA   : *EN
-  #     en-AU   : *EN
-  #     zh-Hans : &ZH_HANS  ❤️博客园
-  #     zh      : *ZH_HANS
-  #     zh-CN   : *ZH_HANS
-  #     zh-SG   : *ZH_HANS
-  #     zh-Hant : &ZH_HANT  ❤️網域
-  #     zh-TW   : *ZH_HANT
-  #     zh-HK   : *ZH_HANT
-  #     ko      : &KO       ❤️도메인 이름
-  #     ko-KR   : *KO
-  #   url:  https://www.cnblogs.com/MayeZhang/
+  - titles:
+      en      : &EN       ❤️Domain
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  ❤️博客园
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  ❤️網域
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       ❤️도메인 이름
+      ko-KR   : *KO
+    url:  https://www.cnblogs.com/MayeZhang/
   
-  - title: '导航',
-                chilren: [
-                    {
-                        title: '谷歌',
-                        url: 'https://www.google.com/',
-                    },
-                    {
-                        title: '百度',
-                        url: 'https://www.baidu.com/',
-                    },
-                ]
+  # - title: '导航',
+  #               chilren: [
+  #                   {
+  #                       title: '谷歌',
+  #                       url: 'https://www.google.com/',
+  #                   },
+  #                   {
+  #                       title: '百度',
+  #                       url: 'https://www.baidu.com/',
+  #                   },
+  #               ]
