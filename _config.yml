@@ -145,7 +145,7 @@ sharing:
 
 ## => Pageview
 ##############################
-# 改动了
+# 改动了,统计查阅数的
 pageview:
   provider: false # false (default), "leancloud", "custom"
 
