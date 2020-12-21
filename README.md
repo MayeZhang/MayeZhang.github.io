@@ -1,105 +1,57 @@
-# Personal HomePage
+# end2end Clean Jekyll theme [![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
 
-邹雨泽的个人主页。主题来自于[TeXt](https://github.com/kitian616/jekyll-TeXt-theme)。
 
-<details>
-<summary>点击打开目录</summary>
-<!-- MarkdownTOC autolink="true" -->
 
-- [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
-	- [进阶\(本地编译，预览\)](#%E8%BF%9B%E9%98%B6%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91%EF%BC%8C%E9%A2%84%E8%A7%88)
-		- [依赖项](#%E4%BE%9D%E8%B5%96%E9%A1%B9)
-		- [配置方式](#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
-- [评论设置](#%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE)
-- [ChangeLog](#changelog)
+* [x] Clean layout
+* [x] Resposive layout
+* [x] Preprocessor SASS
+* [x] CSS minified
+* [x] Pagination
+* [x] Syntax highlight
+* [x] Author config
+* [x] Comments with Disqus
+* [ ] Search posts
+* [ ] Share posts
 
-<!-- /MarkdownTOC -->
-</details>
+---
 
-## 快速开始
+### Start in 4 steps
 
-- clone本repo, 
+1. Download or clone repo `git clone git@github.com:nandomoreirame/end2end.git`
+2. Enter the folder: `cd end2end/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `bundle exec jekyll serve`
 
-```
-git clone https://github.com/zouyu4524/zouyu4524.github.io.git
-```
+Access, [localhost:4000/end2end](http://localhost:4000/end2end)
 
-- 删除`_posts`目录下的所有内容, 新增内容添加其中即可。
+### Deploy in Github pages in 2 steps
 
-- 修改`_config.yml`配置个人信息
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
 
-**更多详细设置可以参阅原Po的[文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/configuration)**。
+---
 
-### 进阶(本地编译，预览)
+### Using Rake tasks
 
-#### 依赖项
+* Create a new page: `rake page name="contact.md"`
+* Create a new post: `rake post title="TITLE OF THE POST"`
 
-- Ruby & Jekyll
+---
 
-安装方式参考: [Installation](https://jekyllrb.com/docs/installation/)
+### Demo and Download
 
-#### 配置方式 
+[Demo](https://nandomoreirame.github.io/end2end/)
+[Download](https://github.com/nandomoreirame/end2end/archive/master.zip)
 
-- 以上安装完毕后, 进入已clone的项目目录下
+![end2end - free Jekyll theme](/screenshot.png)
 
-```
-cd zouyu4524.github.io
-```
+---
 
-- 初始化项目
+### Copyright and license
 
-```
-bundle install --path vendor/bundle
-```
-**说明:** `bundle`是用于管理Ruby依赖项的工具, 相当于`gradle`之于安卓。将会根据项目中的`Gemfile`逐一安装项目所需的依赖项。而`--path vendor/bundle`则是指定相应依赖项所存放的目录。
+It is under [the MIT license](/LICENSE).
 
-- 编译, 启动预览
+> :warning:
+  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `source/_layouts/default.html`
 
-以上执行完毕后将配置好相应的依赖项, 此后只需执行
-
-```
-bundle exec jekyll serve
-```
-
-即可本地编译, 启动预览。
-
-- 预览
-
-在浏览器中输入`localhost:4000`即可预览。
-
-## 评论设置
-
-### Gitalk
-
-首先需要在`_config.yml`文件中配置`comments`下的`provider`, 以`gitalk`为例。接下来需要相应配置`gitalk`的各个参数, 注释中有详述。其原理为, 评论内容自动连接到Github指定仓库, 并在该仓库创建Issue。从而将评论内容填入其中。为了实现这个功能, 还需要创建一个GitHub的OAuth application, 创建[链接](https://github.com/settings/applications/new)。其中名称可以填写为主页repo, URL和callback URL一致, 均为`https://USERNAME.github.io`（或自定义的域名）。创建后就可以得到相应的Client ID以及Client Secret。
-
-~~[**Update**, 2020-02-06]: 由于GitHub的安全策略更改, 1.5.0版前的gitalk js文件逻辑将导致Github发送警告邮件:~~  
-> [GitHub API] Deprecation notice for authentication via URL query parameters  
-
-~~*暂时解决此问题的方案由[@geektutu](https://github.com/geektutu)提供: [GitHub app API query parameter deprecation](https://github.com/gitalk/gitalk/issues/343#issuecomment-581758733)。*~~
-
-~~[**Update**, 2020-02-09]: 目前gitalk已经修复了该问题, 升级版本到1.5.2即可。~~
-
-[**Update**, 2020-02-22]: 考虑到GitHub访问受限的问题, 将评论系统更换为Valine(LeanCloud backend)。
-
-**注意**: 相应主页的repo需要开启ISSUE功能, 否则无法开启评论。
-
-### Valine
-
-由于Gitalk基于GitHub, 在国内访问受限, 考虑将评论系统切换为Valine, 具体的配置过程可以参考: [Valine-TeXt](https://tianqi.name/jekyll-TeXt-theme/docs/en/configuration#valine)。
-
-此外, 需要开启评论功能的文章需要为其设置唯一的`key`属性, 为字符串, 以字母开头（**不需要引号**）, Gitalk将会以此`key`在相应的评论所创建的issue上打上标签。
-
-*本地通过Jekyll编译时无法看到评论功能。*
-
-## 配置
-
-- 主页面
-
-  `Blog/landing`，可以修改封面
-
-- 标签
-
-  _data/navigation
-
-- 
+Enjoy :yum:
