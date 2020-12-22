@@ -1,57 +1,93 @@
-# end2end Clean Jekyll theme [![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
+# Jekyll Resume Theme
 
+Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
 
-* [x] Clean layout
-* [x] Resposive layout
-* [x] Preprocessor SASS
-* [x] CSS minified
-* [x] Pagination
-* [x] Syntax highlight
-* [x] Author config
-* [x] Comments with Disqus
-* [ ] Search posts
-* [ ] Share posts
+# Stack
 
----
+![](https://img.shields.io/badge/jekyll-✓-blue.svg)
+![](https://img.shields.io/badge/html5-✓-blue.svg)
+![](https://img.shields.io/badge/sass-✓-blue.svg)
+![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
+![](https://img.shields.io/badge/particle--js-✓-blue.svg)
+![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
+![](https://img.shields.io/badge/devicon-✓-blue.svg)
+![](https://img.shields.io/badge/gulp-✓-blue.svg)
 
-### Start in 4 steps
+***
 
-1. Download or clone repo `git clone git@github.com:nandomoreirame/end2end.git`
-2. Enter the folder: `cd end2end/`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve`
+<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
 
-Access, [localhost:4000/end2end](http://localhost:4000/end2end)
+***
 
-### Deploy in Github pages in 2 steps
+# Screenshot
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
+<p align="center">
+  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
+</p>
 
----
+# Quick Setup
 
-### Using Rake tasks
+1. Install Jekyll: `gem install jekyll bundler`
+2. Fork this repository and clone your fork
+3. Edit `_config.yml` to personalize your site
 
-* Create a new page: `rake page name="contact.md"`
-* Create a new post: `rake post title="TITLE OF THE POST"`
+# Settings
 
----
+You have to fill some informations on `_config.yml` to customize your site:
 
-### Demo and Download
+## Site settings
+```yml
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
+```
 
-[Demo](https://nandomoreirame.github.io/end2end/)
-[Download](https://github.com/nandomoreirame/end2end/archive/master.zip)
+## User settings
+```yml
+username: Lorem Ipsum
+user_description: Software Engineer at Lorem Ipsum Dolor
+user_title: Mauricio Urraco
+email: mauriurraco@gmail.com
+```
 
-![end2end - free Jekyll theme](/screenshot.png)
+> Don't forget to change your URL before you deploy your site!
 
----
+# Color and Particle Customization
 
-### Copyright and license
+- Color Customization
+  - Edit the `.sass` variables
+- Particle Customization
+  - Edit the json data in particle function in `app.js`
+  - Refer to `Particle.js` for help
 
-It is under [the MIT license](/LICENSE).
+# Content
 
-> :warning:
-  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `source/_layouts/default.html`
+You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
 
-Enjoy :yum:
+```html
+<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
+  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+</a>
+```
+
+# Running locally
+
+In order to compile the assets and run `Jekyll` locally you need to follow those steps:
+
+1. Install Jekyll
+2. Run `bundle install`
+3. Run `bundle exec jekyll build`
+4. Start and http-server in the folder `_site`
+
+# Contribution
+
+- Report issues
+- Open pull request with improvements
+- Spread the word
+- Reach out to me directly at <mauriurraco@gmail.com>
+
+# Credits
+
+- [Nathan Randecker](https://github.com/nrandecker)
