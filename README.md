@@ -1,93 +1,126 @@
-# Jekyll Resume Theme
+# Space Jekyll
 
-Live demo at https://jekyll-theme-minimal-resume.netlify.com/
+A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
+See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
 
-# Stack
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
 
-![](https://img.shields.io/badge/jekyll-✓-blue.svg)
-![](https://img.shields.io/badge/html5-✓-blue.svg)
-![](https://img.shields.io/badge/sass-✓-blue.svg)
-![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
-![](https://img.shields.io/badge/particle--js-✓-blue.svg)
-![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
-![](https://img.shields.io/badge/devicon-✓-blue.svg)
-![](https://img.shields.io/badge/gulp-✓-blue.svg)
+# Site/User Settings
 
-***
+customize your site in ``_config.yml``
 
-<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
+```ruby
 
-***
+# Site settings
+description: A blog about lorem ipsum
+baseurl: "" # the subpath
+url: "" # the base hostname &/|| protocol for your site
 
-# Screenshot
-
-<p align="center">
-  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
-</p>
-
-# Quick Setup
-
-1. Install Jekyll: `gem install jekyll bundler`
-2. Fork this repository and clone your fork
-3. Edit `_config.yml` to personalize your site
-
-# Settings
-
-You have to fill some informations on `_config.yml` to customize your site:
-
-## Site settings
-```yml
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-```
-
-## User settings
-```yml
+# User settings
 username: Lorem Ipsum
-user_description: Software Engineer at Lorem Ipsum Dolor
-user_title: Mauricio Urraco
-email: mauriurraco@gmail.com
+user_description: Lorem Developer
+user_title: Lorem Ipsum
+email: lorem@ipsum.com
+twitter_username: loremipsum
+github_username:  loremipsum
+gplus_username:  loremipsum
+disqus_username: loremipsum
+
 ```
 
-> Don't forget to change your URL before you deploy your site!
+See more about project and links in [_config.yml](./_config.yml)
 
-# Color and Particle Customization
+## How to create a post ?
 
-- Color Customization
-  - Edit the `.sass` variables
-- Particle Customization
-  - Edit the json data in particle function in `app.js`
-  - Refer to `Particle.js` for help
+_posts create a file .md with structure:
 
-# Content
-
-You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
-
-```html
-<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
-  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-</a>
+```md
+---
+layout: post
+title: "Lorem ipsum speak.."
+date: 2016-09-13 01:00:00
+image: '/assets/img/post-image.png'
+description: 'about tech'
+tags:
+- lorem
+- tech
+categories:
+- Lorem ipsum
+twitter_text: 'How to speak with Lorem'
+---
 ```
 
-# Running locally
+## How to insert new links on menu navigation ?
 
-In order to compile the assets and run `Jekyll` locally you need to follow those steps:
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
 
-1. Install Jekyll
-2. Run `bundle install`
-3. Run `bundle exec jekyll build`
-4. Start and http-server in the folder `_site`
+You should open `_config.yml` and change/add `links` section:
 
-# Contribution
+```yaml
+links:
+  section_1: # you can use any name
+    - title: home # show on menu
+      url: / #link
+      key_trigger: 1 # link shortcut and show on the left of the title
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
+```
 
-- Report issues
-- Open pull request with improvements
-- Spread the word
-- Reach out to me directly at <mauriurraco@gmail.com>
+Frontend Technologies
+---------------------
+* [Gulp](https://gulpjs.com/): The streaming build system.
+* [Stylus](http://stylus-lang.com/): expressive, dynamic, robust CSS.
+* [BrowserSync](https://www.browsersync.io/): Time-saving synchronised browser testing.
+* [Rupture](https://github.com/jescalan/rupture): Simple media queries for stylus.
+* [Kouto-Swiss](http://kouto-swiss.io/): A complete CSS framework for Stylus.
+* [Jeet](http://jeet.gs/): A grid system for human.
+* [Zepto.js](http://zeptojs.com/): The aerogel-weight jQuery-compatible JavaScript library.
 
-# Credits
+## How can I modify the theme ?
 
-- [Nathan Randecker](https://github.com/nrandecker)
+First, install [jekyll](https://jekyllrb.com/) and [node.js](https://nodejs.org/).
+
+1. Fork the theme with your username, example: `charlie.github.io`
+2. Clone repository to your computer
+3. run `npm install`
+4. run `gulp`
+5. Be happy by modifying the files
+
+**Space Jekyll** uses the [Stylus](http://stylus-lang.com/) to process his css, then modifies the style of the theme in [this folder](https://github.com/victorvoid/space-jekyll-template/tree/master/src/styl).
+
+You can go in the [variable.styl](https://github.com/victorvoid/space-jekyll-template/blob/master/src/styl/_variables.styl) and modify the colors. 
+
+
+## License
+The MIT License (MIT)
+
+Copyright (c) 2016 Victor Igor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
