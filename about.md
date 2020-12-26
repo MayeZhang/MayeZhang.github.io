@@ -16,3 +16,4 @@ You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is 
 
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}
+
