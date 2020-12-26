@@ -5,6 +5,9 @@
 # - title: archive
 #   url: /archive/
 #   external: false
+- title: Blog
+  url: https://www.cnblogs.com/MayeZhang/
+  external: true
 
 - title: About
   url: /about/
@@ -14,10 +17,6 @@
 # Example:
 # - title: github
 #   url: https://github.com/piharpi/jekyll-klise
-#   external: true
-
-# - title: blog
-#   url: https://www.cnblogs.com/MayeZhang/
 #   external: true
 
 # - title: resume
