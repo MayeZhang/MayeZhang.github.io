@@ -7,7 +7,7 @@
 #   external: false
 - title: Blog
   url: https://www.cnblogs.com/MayeZhang/
-  external: true
+  external: false
 
 - title: About
   url: /about/
